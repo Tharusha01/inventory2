@@ -1,0 +1,36 @@
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\bin\Debug\inventoryv2.exe.config
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\bin\Debug\inventoryv2.exe
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\bin\Debug\inventoryv2.pdb
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.csproj.AssemblyReference.cache
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.csproj.SuggestedBindingRedirects.cache
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.Form1.resources
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.manageuser.resources
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.Properties.Resources.resources
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.csproj.GenerateResource.cache
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.csproj.CoreCompileInputs.cache
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.csproj.CopyComplete
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.exe
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.pdb
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.Customerlist.resources
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.ManageCustomer.resources
+C:\Users\vinod\source\repos\inventoryv2\inventoryv2\obj\Debug\inventoryv2.Manageprodoucts.resources
+D:\Inventory\Using ARRAY\inventoryv2\bin\Debug\inventoryv2.exe.config
+D:\Inventory\Using ARRAY\inventoryv2\bin\Debug\inventoryv2.exe
+D:\Inventory\Using ARRAY\inventoryv2\bin\Debug\inventoryv2.pdb
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.csproj.AssemblyReference.cache
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.csproj.SuggestedBindingRedirects.cache
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Customerlist.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Form1.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.ManageCustomer.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Manageprodoucts.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.manageuser.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Properties.Resources.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.csproj.GenerateResource.cache
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.csproj.CoreCompileInputs.cache
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.csproj.CopyComplete
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.exe
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.pdb
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.HomeFormcs.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.ManageCategories.resources
+D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Manageordrs.resources
