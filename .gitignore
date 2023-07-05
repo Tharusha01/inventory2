@@ -1,0 +1,65 @@
+# Ignore Visual Studio files
+.vs/
+*.sln
+*.suo
+*.user
+*.vspscc
+*_i.c
+*_p.c
+*.pidb
+*.log
+*.tlog
+*.cache
+*.ilk
+*.bak
+*.pdb
+*.resharper*
+*.resharper.user
+*.[Rr]e[Ss]harper
+[Tt]humbs.db
+*.rptproj.user
+
+# Ignore build artifacts
+[Oo]bj/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+[Nn]ode_modules/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore build results
+*.dll
+*.exe
+*.apk
+*.apk.bundle
+*.ipa
+*.dSYM/
+*.so
+*.lib
+*.jar
+
+# Ignore user-specific files and settings
+*.userprefs
+*.usertasks
+*.userassemblyinfo
+
+# Ignore logs and diagnostic files
+*.log
+*.logs
+*.db
+*.mdb
+*.ldb
+*.mdf
+*.ldf
+
+# Ignore miscellaneous files
+*.cache
+*.scc
+*.bak
+*.bak2
+*.bak3
+*.old
+*.temp

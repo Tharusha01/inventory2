@@ -53,5 +53,15 @@ namespace inventoryv2
 
             this.Hide();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ManageCustomer homeForm = new ManageCustomer();
+            homeForm.Show();
+
+
+            this.Hide();
+
+        }
     }
 }

@@ -20,8 +20,8 @@ namespace inventoryv2
         private string[,] customerDataArray;
         private void button1_Click(object sender, EventArgs e)
         {
-            string customerID = Customerid.Text;
-            string customerName = customername.Text;
+            string customerID = customer_id.Text;
+            string customerName = customer_name.Text;
 
           
             if (customerDataArray == null)
@@ -144,8 +144,8 @@ namespace inventoryv2
                 string currentCustomerName = customerDataArray[rowIndex, 1];
 
                 // Show the current values in the TextBoxes for editing
-                Customerid.Text = currentCustomerID;
-                customername.Text = currentCustomerName;
+                customer_id.Text = currentCustomerID;
+                customer_name.Text = currentCustomerName;
 
                 // Disable the Edit button and enable the Update button
                 button3.Enabled = false;
@@ -161,8 +161,8 @@ namespace inventoryv2
                 int rowIndex = bunifuCustomDataGrid1.SelectedRows[0].Index;
 
                 // Get the updated values from the TextBoxes
-                string updatedCustomerID = Customerid.Text;
-                string updatedCustomerName = customername.Text;
+                string updatedCustomerID = customer_id.Text;
+                string updatedCustomerName = customer_name.Text;
 
                 // Update the data in the array
                 customerDataArray[rowIndex, 0] = updatedCustomerID;
