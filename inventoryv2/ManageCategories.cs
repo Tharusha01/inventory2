@@ -63,7 +63,7 @@ namespace inventoryv2
                 // Get the selected row
                 DataGridViewRow selectedRow = tbl_categoryData.SelectedRows[0];
 
-            //    // Retrieve the desired values from the selected row
+                // Retrieve the desired values from the selected row
                 string name = selectedRow.Cells["Category Name"].Value.ToString();
                 txt_categoryName.Text = name;
             }
