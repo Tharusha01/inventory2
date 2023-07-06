@@ -82,5 +82,15 @@ namespace inventoryv2
             // Hide the login form.
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

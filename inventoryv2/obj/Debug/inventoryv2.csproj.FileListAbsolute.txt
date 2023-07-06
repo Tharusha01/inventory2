@@ -34,3 +34,22 @@ D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.pdb
 D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.HomeFormcs.resources
 D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.ManageCategories.resources
 D:\Inventory\Using ARRAY\inventoryv2\obj\Debug\inventoryv2.Manageordrs.resources
+E:\inventory2\inventoryv2\bin\Debug\inventoryv2.exe.config
+E:\inventory2\inventoryv2\bin\Debug\inventoryv2.exe
+E:\inventory2\inventoryv2\bin\Debug\inventoryv2.pdb
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.csproj.AssemblyReference.cache
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.csproj.SuggestedBindingRedirects.cache
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.Customerlist.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.Form1.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.HomeFormcs.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.ManageCategories.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.ManageCustomer.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.Manageordrs.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.Manageprodoucts.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.manageuser.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.Properties.Resources.resources
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.csproj.GenerateResource.cache
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.csproj.CoreCompileInputs.cache
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.csproj.CopyComplete
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.exe
+E:\inventory2\inventoryv2\obj\Debug\inventoryv2.pdb
