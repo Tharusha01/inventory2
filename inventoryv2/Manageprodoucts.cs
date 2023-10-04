@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,8 @@ namespace inventoryv2
             InitializeComponent();
         }
         private string[,] productDataArray;
-        private string dataFilePath = @"C:\\Users\\Tharusha\\Documents\\Demo\\manage_prodoucts.txt";
+        string rootPath = AppDomain.CurrentDomain.BaseDirectory;
+        private string dataFilePath;
         private void button1_Click(object sender, EventArgs e)
         {
             string productID = txtProductID.Text;
@@ -26,7 +28,7 @@ namespace inventoryv2
             string productQty = txtProductQty.Text;
             string productPrice = txtProductPrice.Text;
             string productDescription = txtProductDescription.Text;
-
+            dataFilePath = Path.Combine(rootPath, "manage_products.txt");
             // Append the entered data to the text file
             using (StreamWriter writer = new StreamWriter(dataFilePath, true))
             {
@@ -106,6 +108,7 @@ namespace inventoryv2
         {
             //read prious from array
             // Check if the data file exists
+            dataFilePath = Path.Combine(rootPath, "manage_products.txt");
             if (File.Exists(dataFilePath))
             {
                 // Read the data from the file
@@ -135,15 +138,25 @@ namespace inventoryv2
             // Create the combobox
             ComboBox comboBox = new ComboBox();
 
-            // Read the text file
-            using (StreamReader reader = new StreamReader(@"C:\\Users\\Tharusha\\Documents\\Demo\\category_data.txt"))
+            // Assuming your default namespace is "inventoryv2"
+            string resourcePath = Path.Combine(rootPath, "category_data.txt");
+            // Get the assembly where the resource is embedded
+            Assembly assembly = Assembly.GetExecutingAssembly();
+
+            // Read the resource and populate the ComboBox
+            using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
             {
-                // Iterate through the lines in the text file
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                if (stream != null)
                 {
-                    // Add each item to the combobox
-                    comboBox.Items.Add(line);
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            // Add each item to the ComboBox
+                            comboBox.Items.Add(line);
+                        }
+                    }
                 }
             }
 

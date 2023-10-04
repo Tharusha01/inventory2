@@ -23,6 +23,8 @@ namespace inventoryv2
             InitializeComponent();
             // Set up the DataTable columns
         }
+        string rootPath = AppDomain.CurrentDomain.BaseDirectory;
+        private string dataFilePath;
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -32,7 +34,6 @@ namespace inventoryv2
             // Hide the login form.
             this.Hide();
         }
-        private string dataFilePath = @"C:\\Users\\Tharusha\\Documents\\Demo\\category_data.txt";  // Path to the text file  @"C:\\Users\\Tharusha\\Documents\\Demo\\customer_data.txt";
         private void button1_Click(object sender, EventArgs e)
         {
             string categoryName = txt_categoryName.Text;
@@ -128,6 +129,7 @@ namespace inventoryv2
 
         private void SaveCategoryDataToFile()
         {
+            dataFilePath = Path.Combine(rootPath, "category_data.txt");
             using (StreamWriter writer = new StreamWriter(dataFilePath, false))
             {
                 foreach (DataRow row in categoryDataTable.Rows)
