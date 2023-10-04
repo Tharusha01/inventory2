@@ -63,5 +63,13 @@ namespace inventoryv2
             this.Hide();
 
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            reports homeForm = new reports();
+            homeForm.Show();
+            this.Hide();
+
+        }
     }
 }

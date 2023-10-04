@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,11 +32,10 @@ namespace inventoryv2
             // Hide the login form.
             this.Hide();
         }
-
+        private string dataFilePath = @"C:\\Users\\Tharusha\\Documents\\Demo\\category_data.txt";  // Path to the text file  @"C:\\Users\\Tharusha\\Documents\\Demo\\customer_data.txt";
         private void button1_Click(object sender, EventArgs e)
         {
-            String categoryName = txt_categoryName.Text;
-            
+            string categoryName = txt_categoryName.Text;
 
             if (categoryDataTable == null)
             {
@@ -52,9 +52,12 @@ namespace inventoryv2
 
             tbl_categoryData.DataSource = categoryDataTable;
 
-            //MessageBox.Show("Category stored successfully!");
+            // Save the category data to the text file
+            SaveCategoryDataToFile();
 
+            //MessageBox.Show("Category stored successfully!");
         }
+
         private void tbl_categoryData_SelectionChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Selected Category not found.");
@@ -84,6 +87,9 @@ namespace inventoryv2
                     // Modify the desired column value of the selected row
                     categoryRow["Category Name"] = txt_categoryName.Text;
 
+                    // Save the category data to the text file
+                    SaveCategoryDataToFile();
+
                     MessageBox.Show("Category updated successfully!");
                 }
                 else
@@ -107,6 +113,10 @@ namespace inventoryv2
                 {
                     // Modify the desired column value of the selected row
                     categoryDataTable.Rows.Remove(categoryRow);
+
+                    // Save the category data to the text file
+                    SaveCategoryDataToFile();
+
                     MessageBox.Show("Category deleted successfully!");
                 }
                 else
@@ -114,6 +124,24 @@ namespace inventoryv2
                     MessageBox.Show("Selected Category not found.");
                 }
             }
+        }
+
+        private void SaveCategoryDataToFile()
+        {
+            using (StreamWriter writer = new StreamWriter(dataFilePath, false))
+            {
+                foreach (DataRow row in categoryDataTable.Rows)
+                {
+                    string categoryId = row["Category Id"].ToString();
+                    string categoryName = row["Category Name"].ToString();
+                    writer.WriteLine($"{categoryId},{categoryName}");
+                }
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
