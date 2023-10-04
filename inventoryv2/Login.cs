@@ -23,16 +23,16 @@ namespace inventoryv2
         {
             string username = userName.Text;
             string password = Password.Text;
-            this.Hide();
-            HomeFormcs homeForm = new HomeFormcs();
-            homeForm.Show();
-            // Check the login credentials.
-            //if (username == "admin" && password == "password")
-            //{
-            // The login credentials are valid. Show the home form.
-            //HomeFormcs homeForm = new HomeFormcs();
-            //homeForm.Show();
 
+
+            // Check the login credentials.
+            if (username == "admin" && password == "password")
+            {
+                // The login credentials are valid.Show the home form.
+                HomeFormcs homeForm = new HomeFormcs();
+                homeForm.Show();
+                this.Hide();
+            }
             // Save array data to a text file.
             //string[] array = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             //string filePath = "array_data.txt"; // Path and name of the output file
@@ -47,14 +47,16 @@ namespace inventoryv2
             //}
 
             // Hide the login form.
-            //    this.Hide();
+            // this.Hide();
             //}
-            //else
-            //{
-            // The login credentials are invalid. Display an error message.
-            //MessageBox.Show("Invalid username or password.");
-        }
-    
+            else
 
+            {
+                //The login credentials are invalid. Display an error message.
+                MessageBox.Show("Invalid username or password.");
+            }
+
+
+        }
     }
 }

@@ -20,10 +20,10 @@ namespace inventoryv2
         }
         private string[,] customerDataArray;
         private string dataFilePath = @"C:\\Users\\Tharusha\\Documents\\Demo\\customer_data.txt";
-        private void label4_Click(object sender, EventArgs e)
-        {
+       private void label4_Click(object sender, EventArgs e)
+       {
 
-        }
+       }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -141,13 +141,23 @@ namespace inventoryv2
         }
 
         private void button3_Click(object sender, EventArgs e)
+
         {
+
+            bunifuCustomDataGrid1.Columns.Add("Column1", "Header 1");
+            bunifuCustomDataGrid1.Columns.Add("Column2", "Header 2");
+            bunifuCustomDataGrid1.Columns.Add("Column3", "Header 3");
+
+             
             if (bunifuCustomDataGrid1.SelectedRows.Count > 0)
             {
                 // Get the index of the selected row
                 int rowIndex = bunifuCustomDataGrid1.SelectedRows[0].Index;
 
                 // Get the updated values from the TextBoxes
+
+               
+
                 string updatedCustomerID = Customerid.Text;
                 string updatedCustomerName = customername.Text;
                 string updatedCustomerPhone = customerphone.Text;
@@ -182,7 +192,7 @@ namespace inventoryv2
         }
 
         private void Customerlist_Load(object sender, EventArgs e)
-        {
+        {      //read prious from array
             // Check if the data file exists
             if (File.Exists(dataFilePath))
             {
@@ -204,6 +214,20 @@ namespace inventoryv2
                 // Convert the customerDataArray to DataTable and bind it to the DataGridView
                 bunifuCustomDataGrid1.DataSource = ConvertArrayToDataTable(customerDataArray);
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            HomeFormcs homeForm = new HomeFormcs();
+            homeForm.Show();
+
+            //back to home
+            this.Hide();
+        }
+
+        private void customername_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
